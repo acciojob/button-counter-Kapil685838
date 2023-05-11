@@ -1,18 +1,13 @@
-
-import React from "react";
+import React,{useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
-  let count = 0;
-  function btnClicked() {
-    count++;
-    document.getElementById("display").innerHTML = `Button clicked ${count} times`;
-  }
+  let [btnClicked, countBtnClicked] = useState(0);
   return (
     <div>
         {/* Do not remove the main div */}
-        <p id="display">Button clicked 0 times.</p>
-        <button onClick={btnClicked}>Click me</button>
+        <p id="display">Button clicked {btnClicked} times.</p>
+        <button onClick={() => {countBtnClicked(btnClicked + 1)}}>Click me</button>
     </div>
   )
 }
