@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <p id="display">Button clicked {btnClicked} times.</p>
+        <p>Button clicked {btnClicked} times</p>
         <button onClick={() => {countBtnClicked(btnClicked + 1)}}>Click me</button>
     </div>
   )
