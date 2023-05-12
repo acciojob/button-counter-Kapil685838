@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--openssl-legacy-provider jest --no-color 2>output.txt",
-    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development --watch --open --hot",
+    "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress":"^9.5.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^4.3.0",
+    "cypress": "^9.5.0",
     "jest-junit": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
